@@ -318,7 +318,7 @@ export default function TruyenhinhContent({ initialChannelId } = {}) {
     const fetchEPG = async () => {
       setIsEpgLoading(true);
       try {
-        const res = await fetch(`/api/epg?source=vnepg&channel=${activeChannel.id}`);
+        const res = await fetch(`/api/epg?source=lichphatsong&channel=${activeChannel.id}`);
         if (!res.ok) {
           throw new Error("Không thể tải EPG");
         }

@@ -9,7 +9,7 @@ export default function LịchPhatSong() {
   const [epgList, setEpgList] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [isClient, setIsClient] = useState(false);
-  const [epgSource, setEpgSource] = useState("vnepg"); // "vnepg" or "lichphatsong"
+  const [epgSource, setEpgSource] = useState("lichphatsong"); // "lichphatsong" or "vnepg"
   const [isLoading, setIsLoading] = useState(false);
 
   const activeEpgRef = useRef(null);
@@ -108,17 +108,6 @@ export default function LịchPhatSong() {
           <h3 className="text-sm font-bold uppercase tracking-wider text-gray-200 mb-2.5">Nguồn epg</h3>
           <div className="grid grid-cols-2 gap-1.5 p-1 bg-[#1a1a22] border border-[#2b2b36] rounded-xl mb-4">
             <button
-              onClick={() => setEpgSource("vnepg")}
-              disabled={epgSource === "vnepg"}
-              className={`py-1.5 px-3 rounded-lg text-xs font-semibold transition-all text-center ${
-                epgSource === "vnepg"
-                  ? "bg-[#00d4ff] text-black shadow-md shadow-[#00d4ff]/10 cursor-not-allowed"
-                  : "text-gray-400 hover:text-white cursor-pointer"
-              }`}
-            >
-              vnepg.site
-            </button>
-            <button
               onClick={() => setEpgSource("lichphatsong")}
               disabled={epgSource === "lichphatsong"}
               className={`py-1.5 px-3 rounded-lg text-xs font-semibold transition-all text-center ${
@@ -128,6 +117,17 @@ export default function LịchPhatSong() {
               }`}
             >
               lichphatsong.site
+            </button>
+            <button
+              onClick={() => setEpgSource("vnepg")}
+              disabled={epgSource === "vnepg"}
+              className={`py-1.5 px-3 rounded-lg text-xs font-semibold transition-all text-center ${
+                epgSource === "vnepg"
+                  ? "bg-[#00d4ff] text-black shadow-md shadow-[#00d4ff]/10 cursor-not-allowed"
+                  : "text-gray-400 hover:text-white cursor-pointer"
+              }`}
+            >
+              vnepg.site
             </button>
           </div>
 
