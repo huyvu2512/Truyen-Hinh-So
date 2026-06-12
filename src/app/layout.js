@@ -60,6 +60,7 @@ export const viewport = {
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NextTopLoader from "nextjs-toploader";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({ children }) {
   return (
@@ -89,6 +90,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

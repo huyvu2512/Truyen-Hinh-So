@@ -41,6 +41,5 @@ yarn-error.log*
 next-env.d.ts
 
 # Private EPG / Channel configuration and local logos
-public/logos/
 IPTV/
 
