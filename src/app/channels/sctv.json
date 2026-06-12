@@ -1,0 +1,213 @@
+[
+  {
+    "id": "sctv1",
+    "name": "SCTV1",
+    "logo": "/logos/SCTV/sctv1.png",
+    "altLogo": "/logos/SCTV/sctv1.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv1",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv1"
+  },
+  {
+    "id": "sctv2",
+    "name": "SCTV2",
+    "logo": "/logos/SCTV/sctv2.png",
+    "altLogo": "/logos/SCTV/sctv2.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv2",
+    "group": "SCTV"
+  },
+  {
+    "id": "sctv3",
+    "name": "SCTV3",
+    "logo": "/logos/SCTV/sctv3.png",
+    "altLogo": "/logos/SCTV/sctv3.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv3",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv3"
+  },
+  {
+    "id": "sctv4",
+    "name": "SCTV4",
+    "logo": "/logos/SCTV/sctv4.png",
+    "altLogo": "/logos/SCTV/sctv4.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv4",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv4"
+  },
+  {
+    "id": "sctv5",
+    "name": "SCTV5",
+    "logo": "/logos/SCTV/sctv5.png",
+    "altLogo": "/logos/SCTV/sctv5.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv5",
+    "group": "SCTV"
+  },
+  {
+    "id": "sctv6",
+    "name": "SCTV6",
+    "logo": "/logos/SCTV/sctv6.png",
+    "altLogo": "/logos/SCTV/sctv6.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv6",
+    "group": "SCTV"
+  },
+  {
+    "id": "sctv7",
+    "name": "SCTV7",
+    "logo": "/logos/SCTV/sctv7.png",
+    "altLogo": "/logos/SCTV/sctv7.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv7",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv7"
+  },
+  {
+    "id": "sctv8",
+    "name": "SCTV8",
+    "logo": "/logos/SCTV/sctv8.png",
+    "altLogo": "/logos/SCTV/sctv8.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv8",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv8"
+  },
+  {
+    "id": "sctv9",
+    "name": "SCTV9",
+    "logo": "/logos/SCTV/sctv9.png",
+    "altLogo": "/logos/SCTV/sctv9.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv9",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv9"
+  },
+  {
+    "id": "sctv10",
+    "name": "SCTV10",
+    "logo": "/logos/SCTV/sctv10.png",
+    "altLogo": "/logos/SCTV/sctv10.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv10",
+    "group": "SCTV"
+  },
+  {
+    "id": "sctv11",
+    "name": "SCTV11",
+    "logo": "/logos/SCTV/sctv11.png",
+    "altLogo": "/logos/SCTV/sctv11.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv11",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv11"
+  },
+  {
+    "id": "sctv12",
+    "name": "SCTV12",
+    "logo": "/logos/SCTV/sctv12.png",
+    "altLogo": "/logos/SCTV/sctv12.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv12",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv12"
+  },
+  {
+    "id": "sctv13",
+    "name": "SCTV13",
+    "logo": "/logos/SCTV/sctv13.png",
+    "altLogo": "/logos/SCTV/sctv13.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv13",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv13"
+  },
+  {
+    "id": "sctv14",
+    "name": "SCTV14",
+    "logo": "/logos/SCTV/sctv14.png",
+    "altLogo": "/logos/SCTV/sctv14.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv14",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv14"
+  },
+  {
+    "id": "sctv15",
+    "name": "SCTV15",
+    "logo": "/logos/SCTV/sctv15.png",
+    "altLogo": "/logos/SCTV/sctv15.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv15",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv15"
+  },
+  {
+    "id": "sctv16",
+    "name": "SCTV16",
+    "logo": "/logos/SCTV/sctv16.png",
+    "altLogo": "/logos/SCTV/sctv16.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv16",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv16"
+  },
+  {
+    "id": "sctv17",
+    "name": "SCTV17",
+    "logo": "/logos/SCTV/sctv17.png",
+    "altLogo": "/logos/SCTV/sctv17.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv17",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv17"
+  },
+  {
+    "id": "sctv18",
+    "name": "SCTV18",
+    "logo": "/logos/SCTV/sctv18.png",
+    "altLogo": "/logos/SCTV/sctv18.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv18",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv18"
+  },
+  {
+    "id": "sctv19",
+    "name": "SCTV19",
+    "logo": "/logos/SCTV/sctv19.png",
+    "altLogo": "/logos/SCTV/sctv19.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv19",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv19"
+  },
+  {
+    "id": "sctv20",
+    "name": "SCTV20",
+    "logo": "/logos/SCTV/sctv20.png",
+    "altLogo": "/logos/SCTV/sctv20.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv20",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv20"
+  },
+  {
+    "id": "sctv21",
+    "name": "SCTV21",
+    "logo": "/logos/SCTV/sctv21.png",
+    "altLogo": "/logos/SCTV/sctv21.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv21",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv21"
+  },
+  {
+    "id": "sctv22",
+    "name": "SCTV22",
+    "logo": "/logos/SCTV/sctv22.png",
+    "altLogo": "/logos/SCTV/sctv22.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv22",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctv22"
+  },
+  {
+    "id": "sctvphim",
+    "name": "SCTV Phim Tổng Hợp",
+    "logo": "/logos/SCTV/sctvphim.png",
+    "altLogo": "/logos/SCTV/sctvphim.png",
+    "url": "https://api-truyenhinh.vercel.app/sctvphim",
+    "group": "SCTV",
+    "drm": "https://vpsttt.vietanhtv.top/sctv/cleankey.php?id=sctvphim"
+  },
+  {
+    "id": "sctv4k",
+    "name": "SCTV4K",
+    "logo": "/logos/SCTV/sctv4k.png",
+    "altLogo": "/logos/SCTV/sctv4k.png",
+    "url": "https://api-truyenhinh.vercel.app/sctv4k",
+    "group": "SCTV"
+  }
+]

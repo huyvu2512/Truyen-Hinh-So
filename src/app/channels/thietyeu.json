@@ -1,0 +1,18 @@
+[
+  {
+    "id": "antv",
+    "name": "ANTV",
+    "logo": "/logos/Thiết Yếu/antv.png",
+    "altLogo": "/logos/Thiết Yếu/antv.png",
+    "url": "https://api-truyenhinh.vercel.app/antv",
+    "group": "Thiết Yếu"
+  },
+  {
+    "id": "qpvn",
+    "name": "QPVN",
+    "logo": "/logos/Thiết Yếu/qpvn.png",
+    "altLogo": "/logos/Thiết Yếu/qpvn.png",
+    "url": "https://api-truyenhinh.vercel.app/qpvn",
+    "group": "Thiết Yếu"
+  }
+]

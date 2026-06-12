@@ -1,0 +1,114 @@
+[
+  {
+    "id": "htv1",
+    "name": "HTV1",
+    "logo": "/logos/HTV/htv1.png",
+    "altLogo": "/logos/HTV/htv1.png",
+    "url": "https://api-truyenhinh.vercel.app/htv1",
+    "group": "HTV"
+  },
+  {
+    "id": "htv2",
+    "name": "HTV2",
+    "logo": "/logos/HTV/htv2.png",
+    "altLogo": "/logos/HTV/htv2.png",
+    "url": "https://api-truyenhinh.vercel.app/htv2",
+    "group": "HTV"
+  },
+  {
+    "id": "htv3",
+    "name": "HTV3",
+    "logo": "/logos/HTV/htv3.png",
+    "altLogo": "/logos/HTV/htv3.png",
+    "url": "https://api-truyenhinh.vercel.app/htv3",
+    "group": "HTV"
+  },
+  {
+    "id": "htvkey",
+    "name": "HTV Key",
+    "logo": "/logos/HTV/htvkey.png",
+    "altLogo": "/logos/HTV/htvkey.png",
+    "url": "https://api-truyenhinh.vercel.app/htvkey",
+    "group": "HTV"
+  },
+  {
+    "id": "htv7",
+    "name": "HTV7",
+    "logo": "/logos/HTV/htv7.png",
+    "altLogo": "/logos/HTV/htv7.png",
+    "url": "https://api-truyenhinh.vercel.app/htv7",
+    "group": "HTV"
+  },
+  {
+    "id": "htv9",
+    "name": "HTV9",
+    "logo": "/logos/HTV/htv9.png",
+    "altLogo": "/logos/HTV/htv9.png",
+    "url": "https://api-truyenhinh.vercel.app/htv9",
+    "group": "HTV"
+  },
+  {
+    "id": "htvthethao",
+    "name": "HTV Thể Thao",
+    "logo": "/logos/HTV/htvthethao.png",
+    "altLogo": "/logos/HTV/htvthethao.png",
+    "url": "https://api-truyenhinh.vercel.app/htvthethao",
+    "group": "HTV"
+  },
+  {
+    "id": "htvcthuanviet",
+    "name": "HTVC Thuần Việt",
+    "logo": "/logos/HTV/htvcthuanviet.png",
+    "altLogo": "/logos/HTV/htvcthuanviet.png",
+    "url": "https://api-truyenhinh.vercel.app/htvcthuanviet",
+    "group": "HTV"
+  },
+  {
+    "id": "htvcplus",
+    "name": "HTVC Plus",
+    "logo": "/logos/HTV/htvcplus.png",
+    "altLogo": "/logos/HTV/htvcplus.png",
+    "url": "https://api-truyenhinh.vercel.app/htvcplus",
+    "group": "HTV"
+  },
+  {
+    "id": "htvcdulich",
+    "name": "HTVC Du Lịch",
+    "logo": "/logos/HTV/htvcdulich.png",
+    "altLogo": "/logos/HTV/htvcdulich.png",
+    "url": "https://api-truyenhinh.vercel.app/htvcdulich",
+    "group": "HTV"
+  },
+  {
+    "id": "htvccanhac",
+    "name": "HTVC Ca Nhạc",
+    "logo": "/logos/HTV/htvccanhac.png",
+    "altLogo": "/logos/HTV/htvccanhac.png",
+    "url": "https://api-truyenhinh.vercel.app/htvccanhac",
+    "group": "HTV"
+  },
+  {
+    "id": "htvcphim",
+    "name": "HTVC Phim",
+    "logo": "/logos/HTV/htvcphim.png",
+    "altLogo": "/logos/HTV/htvcphim.png",
+    "url": "https://api-truyenhinh.vercel.app/htvcphim",
+    "group": "HTV"
+  },
+  {
+    "id": "htvcgiadinh",
+    "name": "HTVC Gia Đình",
+    "logo": "/logos/HTV/htvcgiadinh.png",
+    "altLogo": "/logos/HTV/htvcgiadinh.png",
+    "url": "https://api-truyenhinh.vercel.app/htvcgiadinh",
+    "group": "HTV"
+  },
+  {
+    "id": "htvcphunu",
+    "name": "HTVC Phụ Nữ",
+    "logo": "/logos/HTV/htvcphunu.png",
+    "altLogo": "/logos/HTV/htvcphunu.png",
+    "url": "https://api-truyenhinh.vercel.app/htvcphunu",
+    "group": "HTV"
+  }
+]

@@ -1,0 +1,410 @@
+[
+  {
+    "id": "thvl1",
+    "name": "THVL1",
+    "logo": "/logos/Địa Phương/thvl1.png",
+    "altLogo": "/logos/Địa Phương/thvl1.png",
+    "url": "https://api-truyenhinh.vercel.app/thvl1",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "thvl2",
+    "name": "THVL2",
+    "logo": "/logos/Địa Phương/thvl2.png",
+    "altLogo": "/logos/Địa Phương/thvl2.png",
+    "url": "https://api-truyenhinh.vercel.app/thvl2",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "thvl3",
+    "name": "THVL3",
+    "logo": "/logos/Địa Phương/thvl3.png",
+    "altLogo": "/logos/Địa Phương/thvl3.png",
+    "url": "https://api-truyenhinh.vercel.app/thvl3",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "thvl4",
+    "name": "THVL4",
+    "logo": "/logos/Địa Phương/thvl4.png",
+    "altLogo": "/logos/Địa Phương/thvl4.png",
+    "url": "https://api-truyenhinh.vercel.app/thvl4",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "thvl5",
+    "name": "THVL5",
+    "logo": "/logos/Địa Phương/thvl5.png",
+    "altLogo": "/logos/Địa Phương/thvl5.png",
+    "url": "https://api-truyenhinh.vercel.app/thvl5",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "tayninhtv",
+    "name": "Tây Ninh",
+    "logo": "/logos/Địa Phương/tayninhtv.png",
+    "altLogo": "/logos/Địa Phương/tayninhtv.png",
+    "url": "https://api-truyenhinh.vercel.app/tayninhtv",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "angiang1",
+    "name": "An Giang 1",
+    "logo": "/logos/Địa Phương/angiang1.png",
+    "altLogo": "/logos/Địa Phương/angiang1.png",
+    "url": "https://api-truyenhinh.vercel.app/angiang1",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "angiang2",
+    "name": "An Giang 2",
+    "logo": "/logos/Địa Phương/angiang2.png",
+    "altLogo": "/logos/Địa Phương/angiang2.png",
+    "url": "https://api-truyenhinh.vercel.app/angiang2",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "angiang3",
+    "name": "An Giang 3",
+    "logo": "/logos/Địa Phương/angiang3.png",
+    "altLogo": "/logos/Địa Phương/angiang3.png",
+    "url": "https://api-truyenhinh.vercel.app/angiang3",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "lamdong1",
+    "name": "Lâm Đồng 1",
+    "logo": "/logos/Địa Phương/lamdong1.png",
+    "altLogo": "/logos/Địa Phương/lamdong1.png",
+    "url": "https://api-truyenhinh.vercel.app/lamdong1",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "lamdong2",
+    "name": "Lâm Đồng 2",
+    "logo": "/logos/Địa Phương/lamdong2.png",
+    "altLogo": "/logos/Địa Phương/lamdong2.png",
+    "url": "https://api-truyenhinh.vercel.app/lamdong2",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "lamdong3",
+    "name": "Lâm Đồng 3",
+    "logo": "/logos/Địa Phương/lamdong3.png",
+    "altLogo": "/logos/Địa Phương/lamdong3.png",
+    "url": "https://api-truyenhinh.vercel.app/lamdong3",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "camau",
+    "name": "Cà Mau",
+    "logo": "/logos/Địa Phương/camau.png",
+    "altLogo": "/logos/Địa Phương/camau.png",
+    "url": "https://api-truyenhinh.vercel.app/camau",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "cantho1",
+    "name": "Cần Thơ 1",
+    "logo": "/logos/Địa Phương/cantho1.png",
+    "altLogo": "/logos/Địa Phương/cantho1.png",
+    "url": "https://api-truyenhinh.vercel.app/cantho1",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "cantho2",
+    "name": "Cần Thơ 2",
+    "logo": "/logos/Địa Phương/cantho2.png",
+    "altLogo": "/logos/Địa Phương/cantho2.png",
+    "url": "https://api-truyenhinh.vercel.app/cantho2",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "cantho3",
+    "name": "Cần Thơ 3",
+    "logo": "/logos/Địa Phương/cantho3.png",
+    "altLogo": "/logos/Địa Phương/cantho3.png",
+    "url": "https://api-truyenhinh.vercel.app/cantho3",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "dongnai1",
+    "name": "Đồng Nai 1",
+    "logo": "/logos/Địa Phương/dongnai1.png",
+    "altLogo": "/logos/Địa Phương/dongnai1.png",
+    "url": "https://api-truyenhinh.vercel.app/dongnai1",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "dongnai2",
+    "name": "Đồng Nai 2",
+    "logo": "/logos/Địa Phương/dongnai2.png",
+    "altLogo": "/logos/Địa Phương/dongnai2.png",
+    "url": "https://api-truyenhinh.vercel.app/dongnai2",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "dnrtv3",
+    "name": "Đồng Nai 3",
+    "logo": "/logos/Địa Phương/dnrtv3.png",
+    "altLogo": "/logos/Địa Phương/dnrtv3.png",
+    "url": "https://api-truyenhinh.vercel.app/dnrtv3",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "dongthap",
+    "name": "Đồng Tháp 1",
+    "logo": "/logos/Địa Phương/dongthap.png",
+    "altLogo": "/logos/Địa Phương/dongthap.png",
+    "url": "https://api-truyenhinh.vercel.app/dongthap",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "dongthap2",
+    "name": "Đồng Tháp 2",
+    "logo": "/logos/Địa Phương/dongthap2.png",
+    "altLogo": "/logos/Địa Phương/dongthap2.png",
+    "url": "https://api-truyenhinh.vercel.app/dongthap2",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "danang1",
+    "name": "Đà Nẵng 1",
+    "logo": "/logos/Địa Phương/danang1.png",
+    "altLogo": "/logos/Địa Phương/danang1.png",
+    "url": "https://api-truyenhinh.vercel.app/danang1",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "danang2",
+    "name": "Đà Nẵng 2",
+    "logo": "/logos/Địa Phương/danang2.png",
+    "altLogo": "/logos/Địa Phương/danang2.png",
+    "url": "https://api-truyenhinh.vercel.app/danang2",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "daklak",
+    "name": "Đắk Lắk",
+    "logo": "/logos/Địa Phương/daklak.png",
+    "altLogo": "/logos/Địa Phương/daklak.png",
+    "url": "https://api-truyenhinh.vercel.app/daklak",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "gialai",
+    "name": "Gia Lai",
+    "logo": "/logos/Địa Phương/gialai.png",
+    "altLogo": "/logos/Địa Phương/gialai.png",
+    "url": "https://api-truyenhinh.vercel.app/gialai",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "hue",
+    "name": "Thừa Thiên Huế",
+    "logo": "/logos/Địa Phương/hue.png",
+    "altLogo": "/logos/Địa Phương/hue.png",
+    "url": "https://api-truyenhinh.vercel.app/hue",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "khanhhoa",
+    "name": "Khánh Hòa",
+    "logo": "/logos/Địa Phương/khanhhoa.png",
+    "altLogo": "/logos/Địa Phương/khanhhoa.png",
+    "url": "https://api-truyenhinh.vercel.app/khanhhoa",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "khanhhoa1",
+    "name": "Khánh Hòa 1",
+    "logo": "/logos/Địa Phương/khanhhoa1.png",
+    "altLogo": "/logos/Địa Phương/khanhhoa1.png",
+    "url": "https://api-truyenhinh.vercel.app/khanhhoa1",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "quangngai",
+    "name": "Quảng Ngãi",
+    "logo": "/logos/Địa Phương/quangngai.png",
+    "altLogo": "/logos/Địa Phương/quangngai.png",
+    "url": "https://api-truyenhinh.vercel.app/quangngai",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "quangtri",
+    "name": "Quảng Trị",
+    "logo": "/logos/Địa Phương/quangtri.png",
+    "altLogo": "/logos/Địa Phương/quangtri.png",
+    "url": "https://api-truyenhinh.vercel.app/quangtri",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "hanoi1",
+    "name": "Hà Nội 1",
+    "logo": "/logos/Địa Phương/hanoi1.png",
+    "altLogo": "/logos/Địa Phương/hanoi1.png",
+    "url": "https://api-truyenhinh.vercel.app/hanoi1",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "hanoi2",
+    "name": "Hà Nội 2",
+    "logo": "/logos/Địa Phương/hanoi2.png",
+    "altLogo": "/logos/Địa Phương/hanoi2.png",
+    "url": "https://api-truyenhinh.vercel.app/hanoi2",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "bacninh",
+    "name": "Bắc Ninh",
+    "logo": "/logos/Địa Phương/bacninh.png",
+    "altLogo": "/logos/Địa Phương/bacninh.png",
+    "url": "https://api-truyenhinh.vercel.app/bacninh",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "caobang",
+    "name": "Cao Bằng",
+    "logo": "/logos/Địa Phương/caobang.png",
+    "altLogo": "/logos/Địa Phương/caobang.png",
+    "url": "https://api-truyenhinh.vercel.app/caobang",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "dienbien",
+    "name": "Điện Biên",
+    "logo": "/logos/Địa Phương/dienbien.png",
+    "altLogo": "/logos/Địa Phương/dienbien.png",
+    "url": "https://api-truyenhinh.vercel.app/dienbien",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "hatinh",
+    "name": "Hà Tĩnh",
+    "logo": "/logos/Địa Phương/hatinh.png",
+    "altLogo": "/logos/Địa Phương/hatinh.png",
+    "url": "https://api-truyenhinh.vercel.app/hatinh",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "haiphong",
+    "name": "Hải Phòng",
+    "logo": "/logos/Địa Phương/haiphong.png",
+    "altLogo": "/logos/Địa Phương/haiphong.png",
+    "url": "https://api-truyenhinh.vercel.app/haiphong",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "haiphongplus",
+    "name": "Hải Phòng Plus",
+    "logo": "/logos/Địa Phương/haiphongplus.png",
+    "altLogo": "/logos/Địa Phương/haiphongplus.png",
+    "url": "https://api-truyenhinh.vercel.app/haiphongplus",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "hungyen",
+    "name": "Hưng Yên",
+    "logo": "/logos/Địa Phương/hungyen.png",
+    "altLogo": "/logos/Địa Phương/hungyen.png",
+    "url": "https://api-truyenhinh.vercel.app/hungyen",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "laichau",
+    "name": "Lai Châu",
+    "logo": "/logos/Địa Phương/laichau.png",
+    "altLogo": "/logos/Địa Phương/laichau.png",
+    "url": "https://api-truyenhinh.vercel.app/laichau",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "langson",
+    "name": "Lạng Sơn",
+    "logo": "/logos/Địa Phương/langson.png",
+    "altLogo": "/logos/Địa Phương/langson.png",
+    "url": "https://api-truyenhinh.vercel.app/langson",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "laocai",
+    "name": "Lào Cai",
+    "logo": "/logos/Địa Phương/laocai.png",
+    "altLogo": "/logos/Địa Phương/laocai.png",
+    "url": "https://api-truyenhinh.vercel.app/laocai",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "nghean",
+    "name": "Nghệ An",
+    "logo": "/logos/Địa Phương/nghean.png",
+    "altLogo": "/logos/Địa Phương/nghean.png",
+    "url": "https://api-truyenhinh.vercel.app/nghean",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "ninhbinh",
+    "name": "Ninh Bình",
+    "logo": "/logos/Địa Phương/ninhbinh.png",
+    "altLogo": "/logos/Địa Phương/ninhbinh.png",
+    "url": "https://api-truyenhinh.vercel.app/ninhbinh",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "phutho",
+    "name": "Phú Thọ",
+    "logo": "/logos/Địa Phương/phutho.png",
+    "altLogo": "/logos/Địa Phương/phutho.png",
+    "url": "https://api-truyenhinh.vercel.app/phutho",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "quangninh1",
+    "name": "Quảng Ninh 1",
+    "logo": "/logos/Địa Phương/quangninh1.png",
+    "altLogo": "/logos/Địa Phương/quangninh1.png",
+    "url": "https://api-truyenhinh.vercel.app/quangninh1",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "quangninh3",
+    "name": "Quảng Ninh 3",
+    "logo": "/logos/Địa Phương/quangninh3.png",
+    "altLogo": "/logos/Địa Phương/quangninh3.png",
+    "url": "https://api-truyenhinh.vercel.app/quangninh3",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "sonla",
+    "name": "Sơn La",
+    "logo": "/logos/Địa Phương/sonla.png",
+    "altLogo": "/logos/Địa Phương/sonla.png",
+    "url": "https://api-truyenhinh.vercel.app/sonla",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "thainguyen",
+    "name": "Thái Nguyên",
+    "logo": "/logos/Địa Phương/thainguyen.png",
+    "altLogo": "/logos/Địa Phương/thainguyen.png",
+    "url": "https://api-truyenhinh.vercel.app/thainguyen",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "thanhhoa",
+    "name": "Thanh Hóa",
+    "logo": "/logos/Địa Phương/thanhhoa.png",
+    "altLogo": "/logos/Địa Phương/thanhhoa.png",
+    "url": "https://api-truyenhinh.vercel.app/thanhhoa",
+    "group": "Địa Phương"
+  },
+  {
+    "id": "tuyenquang",
+    "name": "Tuyên Quang",
+    "logo": "/logos/Địa Phương/tuyenquang.png",
+    "altLogo": "/logos/Địa Phương/tuyenquang.png",
+    "url": "https://api-truyenhinh.vercel.app/tuyenquang",
+    "group": "Địa Phương"
+  }
+]

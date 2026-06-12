@@ -1,0 +1,167 @@
+[
+  {
+    "id": "viegiaitri",
+    "name": "ON Vie Giải Trí",
+    "logo": "/logos/VTVcab/viegiaitri.png",
+    "altLogo": "/logos/VTVcab/viegiaitri.png",
+    "url": "https://api-truyenhinh.vercel.app/viegiaitri",
+    "group": "VTVcab"
+  },
+  {
+    "id": "onphimviet",
+    "name": "ON Phim Việt",
+    "logo": "/logos/VTVcab/onphimviet.png",
+    "altLogo": "/logos/VTVcab/onphimviet.png",
+    "url": "https://api-truyenhinh.vercel.app/onphimviet",
+    "group": "VTVcab"
+  },
+  {
+    "id": "onmovies",
+    "name": "ON Movies",
+    "logo": "/logos/VTVcab/onmovies.png",
+    "altLogo": "/logos/VTVcab/onmovies.png",
+    "url": "https://api-truyenhinh.vercel.app/onmovies",
+    "group": "VTVcab"
+  },
+  {
+    "id": "onechannel",
+    "name": "ON E-Channel",
+    "logo": "/logos/VTVcab/onechannel.png",
+    "altLogo": "/logos/VTVcab/onechannel.png",
+    "url": "https://api-truyenhinh.vercel.app/onechannel",
+    "group": "VTVcab"
+  },
+  {
+    "id": "ono2tv",
+    "name": "ON O2TV",
+    "logo": "/logos/VTVcab/ono2tv.png",
+    "altLogo": "/logos/VTVcab/ono2tv.png",
+    "url": "https://api-truyenhinh.vercel.app/ono2tv",
+    "group": "VTVcab"
+  },
+  {
+    "id": "onbibi",
+    "name": "ON BiBi",
+    "logo": "/logos/VTVcab/onbibi.png",
+    "altLogo": "/logos/VTVcab/onbibi.png",
+    "url": "https://api-truyenhinh.vercel.app/onbibi",
+    "group": "VTVcab"
+  },
+  {
+    "id": "oninfotv",
+    "name": "ON Info TV",
+    "logo": "/logos/VTVcab/oninfotv.png",
+    "altLogo": "/logos/VTVcab/oninfotv.png",
+    "url": "https://api-truyenhinh.vercel.app/oninfotv",
+    "group": "VTVcab"
+  },
+  {
+    "id": "oncine",
+    "name": "ON Cine",
+    "logo": "/logos/VTVcab/oncine.png",
+    "altLogo": "/logos/VTVcab/oncine.png",
+    "url": "https://api-truyenhinh.vercel.app/oncine",
+    "group": "VTVcab"
+  },
+  {
+    "id": "onstyle",
+    "name": "ON Style TV",
+    "logo": "/logos/VTVcab/onstyle.png",
+    "altLogo": "/logos/VTVcab/onstyle.png",
+    "url": "https://api-truyenhinh.vercel.app/onstyle",
+    "group": "VTVcab"
+  },
+  {
+    "id": "onmusic",
+    "name": "ON Music",
+    "logo": "/logos/VTVcab/onmusic.png",
+    "altLogo": "/logos/VTVcab/onmusic.png",
+    "url": "https://api-truyenhinh.vercel.app/onmusic",
+    "group": "VTVcab"
+  },
+  {
+    "id": "ontrending",
+    "name": "ON Trending TV",
+    "logo": "/logos/VTVcab/ontrending.png",
+    "altLogo": "/logos/VTVcab/ontrending.png",
+    "url": "https://api-truyenhinh.vercel.app/ontrending",
+    "group": "VTVcab"
+  },
+  {
+    "id": "viedramas",
+    "name": "ON Vie Dramas",
+    "logo": "/logos/VTVcab/viedramas.png",
+    "altLogo": "/logos/VTVcab/viedramas.png",
+    "url": "https://api-truyenhinh.vercel.app/viedramas",
+    "group": "VTVcab"
+  },
+  {
+    "id": "onvfamily",
+    "name": "ON V Family",
+    "logo": "/logos/VTVcab/onvfamily.png",
+    "altLogo": "/logos/VTVcab/onvfamily.png",
+    "url": "https://api-truyenhinh.vercel.app/onvfamily",
+    "group": "VTVcab"
+  },
+  {
+    "id": "onkids",
+    "name": "ON Kids",
+    "logo": "/logos/VTVcab/onkids.png",
+    "altLogo": "/logos/VTVcab/onkids.png",
+    "url": "https://api-truyenhinh.vercel.app/onkids",
+    "group": "VTVcab"
+  },
+  {
+    "id": "onlife",
+    "name": "ON Life",
+    "logo": "/logos/VTVcab/onlife.png",
+    "altLogo": "/logos/VTVcab/onlife.png",
+    "url": "https://api-truyenhinh.vercel.app/onlife",
+    "group": "VTVcab"
+  },
+  {
+    "id": "onsports",
+    "name": "ON SPORTS",
+    "logo": "/logos/VTVcab/onsports.png",
+    "altLogo": "/logos/VTVcab/onsports.png",
+    "url": "https://api-truyenhinh.vercel.app/onsports",
+    "group": "VTVcab",
+    "drm": "https://vpsttt.vietanhtv.top/tv/key.php?id=c410ddc6a75244639fd0561fba5ef19b:30d13ea42031b9ff8271e5dc37d90e10"
+  },
+  {
+    "id": "onsportsplus",
+    "name": "ON SPORTS+",
+    "logo": "/logos/VTVcab/onsportsplus.png",
+    "altLogo": "/logos/VTVcab/onsportsplus.png",
+    "url": "https://api-truyenhinh.vercel.app/onsportsplus",
+    "group": "VTVcab",
+    "drm": "https://vpsttt.vietanhtv.top/tv/key.php?id=c410ddc6a75244639fd0561fba5ef19b:30d13ea42031b9ff8271e5dc37d90e10"
+  },
+  {
+    "id": "onfootball",
+    "name": "ON FOOTBALL",
+    "logo": "/logos/VTVcab/onfootball.png",
+    "altLogo": "/logos/VTVcab/onfootball.png",
+    "url": "https://api-truyenhinh.vercel.app/onfootball",
+    "group": "VTVcab",
+    "drm": "https://vpsttt.vietanhtv.top/tv/key.php?id=c410ddc6a75244639fd0561fba5ef19b:30d13ea42031b9ff8271e5dc37d90e10"
+  },
+  {
+    "id": "onsportsnews",
+    "name": "ON SPORTS NEWS",
+    "logo": "/logos/VTVcab/onsportsnews.png",
+    "altLogo": "/logos/VTVcab/onsportsnews.png",
+    "url": "https://api-truyenhinh.vercel.app/onsportsnews",
+    "group": "VTVcab",
+    "drm": "https://vpsttt.vietanhtv.top/tv/key.php?id=c410ddc6a75244639fd0561fba5ef19b:30d13ea42031b9ff8271e5dc37d90e10"
+  },
+  {
+    "id": "ongolf",
+    "name": "ON GOLF",
+    "logo": "/logos/VTVcab/ongolf.png",
+    "altLogo": "/logos/VTVcab/ongolf.png",
+    "url": "https://api-truyenhinh.vercel.app/ongolf",
+    "group": "VTVcab",
+    "drm": "https://vpsttt.vietanhtv.top/tv/key.php?id=c410ddc6a75244639fd0561fba5ef19b:30d13ea42031b9ff8271e5dc37d90e10"
+  }
+]
