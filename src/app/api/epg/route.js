@@ -206,10 +206,10 @@ async function fetchAndParse(source) {
 
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
-  const requestedSource = searchParams.get("source") || "vnepg";
+  const source = searchParams.get("source") || "vnepg";
   const channelId = searchParams.get("channel");
 
-  if (requestedSource !== "vnepg" && requestedSource !== "lichphatsong") {
+  if (source !== "vnepg" && source !== "lichphatsong") {
     return NextResponse.json({ error: "Invalid source parameter" }, { status: 400 });
   }
 
@@ -217,51 +217,37 @@ export async function GET(request) {
     return NextResponse.json({ error: "Missing channel parameter" }, { status: 400 });
   }
 
-  // Order sources to try: primary requested source first, then the fallback
-  const sourcesToTry = [
-    requestedSource,
-    requestedSource === "vnepg" ? "lichphatsong" : "vnepg"
-  ];
-
-  let lastError = null;
-
-  for (const src of sourcesToTry) {
-    try {
-      const now = Date.now();
-      let cached = cache[src];
-      
-      if (!cached.data || (now - cached.lastFetched > CACHE_DURATION)) {
-        console.log(`Cache miss for ${src}, fetching and parsing fresh XML...`);
-        const parsed = await fetchAndParse(src);
-        cached.data = parsed.data;
-        cached.channelNames = parsed.channelNames;
-        cached.lastFetched = now;
-      } else {
-        console.log(`Cache hit for ${src} (Fetched ${Math.round((now - cached.lastFetched) / 1000 / 60)}m ago)`);
-      }
-
-      const { data, channelNames } = cached;
-
-      // Dynamically match the requested channelId with XMLTV channels
-      const matchedXmlId = findBestXMLChannelId(channelId, channelNames);
-      
-      if (!matchedXmlId) {
-        console.log(`No matching channel found in XMLTV for: ${channelId} in source ${src}`);
-        // Try the next source if channel not found
-        continue;
-      }
-
-      console.log(`Matched request '${channelId}' to XMLTV Channel: '${matchedXmlId}' using source ${src}`);
-      const channelEPG = data[matchedXmlId] || [];
-      return NextResponse.json(channelEPG);
-    } catch (error) {
-      console.error(`Error loading EPG from source ${src}:`, error.message);
-      lastError = error;
+  try {
+    const now = Date.now();
+    let cached = cache[source];
+    
+    if (!cached.data || (now - cached.lastFetched > CACHE_DURATION)) {
+      console.log(`Cache miss for ${source}, fetching and parsing fresh XML...`);
+      const parsed = await fetchAndParse(source);
+      cached.data = parsed.data;
+      cached.channelNames = parsed.channelNames;
+      cached.lastFetched = now;
+    } else {
+      console.log(`Cache hit for ${source} (Fetched ${Math.round((now - cached.lastFetched) / 1000 / 60)}m ago)`);
     }
-  }
 
-  // If both sources failed or did not find the channel
-  return NextResponse.json({ 
-    error: `Failed to download or parse XML EPG from all sources. Last error: ${lastError ? lastError.message : "unknown"}` 
-  }, { status: 500 });
+    const { data, channelNames } = cached;
+
+    // Dynamically match the requested channelId with XMLTV channels
+    const matchedXmlId = findBestXMLChannelId(channelId, channelNames);
+    
+    if (!matchedXmlId) {
+      console.log(`No matching channel found in XMLTV for: ${channelId} in source ${source}`);
+      return NextResponse.json([]);
+    }
+
+    console.log(`Matched request '${channelId}' to XMLTV Channel: '${matchedXmlId}' using source ${source}`);
+    const channelEPG = data[matchedXmlId] || [];
+    return NextResponse.json(channelEPG);
+  } catch (error) {
+    console.error(`Error loading EPG from source ${source}:`, error.message);
+    return NextResponse.json({ 
+      error: `Failed to download or parse XML EPG from ${source}. Last error: ${error.message}` 
+    }, { status: 500 });
+  }
 }
