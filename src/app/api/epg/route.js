@@ -95,104 +95,121 @@ async function fetchAndParse(source) {
     ? "https://vnepg.site/epg.xml" 
     : "https://lichphatsong.site/schedule/epg.xml";
 
-  // Disable cache on fetch for active testing
-  const response = await fetch(url, {
-    cache: "no-store",
-    headers: {
-      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
-      "Accept-Language": "en-US,en;q=0.9,vi;q=0.8"
+  console.log(`Starting fetch from ${source}: ${url}`);
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => {
+    console.log(`Fetch timeout triggered for ${source}`);
+    controller.abort();
+  }, 5000); // 5 seconds timeout
+
+  try {
+    // Disable cache on fetch for active testing
+    const response = await fetch(url, {
+      cache: "no-store",
+      signal: controller.signal,
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9,vi;q=0.8"
+      }
+    });
+    
+    clearTimeout(timeoutId);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error ${response.status} from ${source}`);
     }
-  });
-  if (!response.ok) {
-    throw new Error(`Failed to download XML from ${source}`);
-  }
 
-  const xmlText = await response.text();
-  const parser = new XMLParser({
-    ignoreAttributes: false,
-    attributeNamePrefix: "@_"
-  });
-  const result = parser.parse(xmlText);
+    console.log(`Successfully downloaded XML from ${source}, parsing...`);
+    const xmlText = await response.text();
+    const parser = new XMLParser({
+      ignoreAttributes: false,
+      attributeNamePrefix: "@_"
+    });
+    const result = parser.parse(xmlText);
 
-  const tv = result.tv;
-  if (!tv) {
-    throw new Error("Invalid XMLTV structure");
-  }
+    const tv = result.tv;
+    if (!tv) {
+      throw new Error("Invalid XMLTV structure");
+    }
 
-  const xmlChannels = Array.isArray(tv.channel) ? tv.channel : tv.channel ? [tv.channel] : [];
-  const xmlProgrammes = Array.isArray(tv.programme) ? tv.programme : tv.programme ? [tv.programme] : [];
+    const xmlChannels = Array.isArray(tv.channel) ? tv.channel : tv.channel ? [tv.channel] : [];
+    const xmlProgrammes = Array.isArray(tv.programme) ? tv.programme : tv.programme ? [tv.programme] : [];
 
-  // Map xml channel ID to all its display names (lowercased)
-  const channelNames = {};
-  xmlChannels.forEach(ch => {
-    const id = ch["@_id"];
-    const names = [];
-    if (Array.isArray(ch["display-name"])) {
-      ch["display-name"].forEach(n => {
-        const text = n["#text"] || n;
+    // Map xml channel ID to all its display names (lowercased)
+    const channelNames = {};
+    xmlChannels.forEach(ch => {
+      const id = ch["@_id"];
+      const names = [];
+      if (Array.isArray(ch["display-name"])) {
+        ch["display-name"].forEach(n => {
+          const text = n["#text"] || n;
+          if (text) names.push(String(text).trim());
+        });
+      } else if (ch["display-name"]) {
+        const text = ch["display-name"]["#text"] || ch["display-name"];
         if (text) names.push(String(text).trim());
-      });
-    } else if (ch["display-name"]) {
-      const text = ch["display-name"]["#text"] || ch["display-name"];
-      if (text) names.push(String(text).trim());
-    }
-    channelNames[id] = names;
-  });
+      }
+      channelNames[id] = names;
+    });
 
-  const parsedEPG = {};
+    const parsedEPG = {};
 
-  xmlProgrammes.forEach(prog => {
-    const xmlChId = prog["@_channel"];
-    if (!parsedEPG[xmlChId]) {
-      parsedEPG[xmlChId] = [];
-    }
+    xmlProgrammes.forEach(prog => {
+      const xmlChId = prog["@_channel"];
+      if (!parsedEPG[xmlChId]) {
+        parsedEPG[xmlChId] = [];
+      }
 
-    let title = "";
-    if (Array.isArray(prog.title)) {
-      title = prog.title[0]["#text"] || prog.title[0];
-    } else if (prog.title) {
-      title = prog.title["#text"] || prog.title;
-    }
+      let title = "";
+      if (Array.isArray(prog.title)) {
+        title = prog.title[0]["#text"] || prog.title[0];
+      } else if (prog.title) {
+        title = prog.title["#text"] || prog.title;
+      }
 
-    let desc = "";
-    if (Array.isArray(prog.desc)) {
-      desc = prog.desc[0]["#text"] || prog.desc[0];
-    } else if (prog.desc) {
-      desc = prog.desc["#text"] || prog.desc;
-    }
+      let desc = "";
+      if (Array.isArray(prog.desc)) {
+        desc = prog.desc[0]["#text"] || prog.desc[0];
+      } else if (prog.desc) {
+        desc = prog.desc["#text"] || prog.desc;
+      }
 
-    const start = parseXMLTVDate(prog["@_start"]);
-    const end = parseXMLTVDate(prog["@_stop"]);
+      const start = parseXMLTVDate(prog["@_start"]);
+      const end = parseXMLTVDate(prog["@_stop"]);
 
-    if (title && start && end) {
-      parsedEPG[xmlChId].push({
-        id: `${xmlChId}-prog-${start.getTime()}`,
-        title: String(title).trim(),
-        desc: String(desc || "").trim(),
-        start: start.toISOString(),
-        end: end.toISOString()
-      });
-    }
-  });
+      if (title && start && end) {
+        parsedEPG[xmlChId].push({
+          id: `${xmlChId}-prog-${start.getTime()}`,
+          title: String(title).trim(),
+          desc: String(desc || "").trim(),
+          start: start.toISOString(),
+          end: end.toISOString()
+        });
+      }
+    });
 
-  // Sort program lists chronologically
-  Object.keys(parsedEPG).forEach(chId => {
-    parsedEPG[chId].sort((a, b) => new Date(a.start) - new Date(b.start));
-  });
+    // Sort program lists chronologically
+    Object.keys(parsedEPG).forEach(chId => {
+      parsedEPG[chId].sort((a, b) => new Date(a.start) - new Date(b.start));
+    });
 
-  return {
-    data: parsedEPG,
-    channelNames
-  };
+    return {
+      data: parsedEPG,
+      channelNames
+    };
+  } catch (error) {
+    clearTimeout(timeoutId);
+    throw error;
+  }
 }
 
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
-  const source = searchParams.get("source") || "vnepg";
+  const requestedSource = searchParams.get("source") || "vnepg";
   const channelId = searchParams.get("channel");
 
-  if (source !== "vnepg" && source !== "lichphatsong") {
+  if (requestedSource !== "vnepg" && requestedSource !== "lichphatsong") {
     return NextResponse.json({ error: "Invalid source parameter" }, { status: 400 });
   }
 
@@ -200,35 +217,51 @@ export async function GET(request) {
     return NextResponse.json({ error: "Missing channel parameter" }, { status: 400 });
   }
 
-  try {
-    const now = Date.now();
-    let cached = cache[source];
-    
-    if (!cached.data || (now - cached.lastFetched > CACHE_DURATION)) {
-      console.log(`Cache miss for ${source}, fetching and parsing fresh XML...`);
-      const parsed = await fetchAndParse(source);
-      cached.data = parsed.data;
-      cached.channelNames = parsed.channelNames;
-      cached.lastFetched = now;
-    } else {
-      console.log(`Cache hit for ${source} (Fetched ${Math.round((now - cached.lastFetched) / 1000 / 60)}m ago)`);
+  // Order sources to try: primary requested source first, then the fallback
+  const sourcesToTry = [
+    requestedSource,
+    requestedSource === "vnepg" ? "lichphatsong" : "vnepg"
+  ];
+
+  let lastError = null;
+
+  for (const src of sourcesToTry) {
+    try {
+      const now = Date.now();
+      let cached = cache[src];
+      
+      if (!cached.data || (now - cached.lastFetched > CACHE_DURATION)) {
+        console.log(`Cache miss for ${src}, fetching and parsing fresh XML...`);
+        const parsed = await fetchAndParse(src);
+        cached.data = parsed.data;
+        cached.channelNames = parsed.channelNames;
+        cached.lastFetched = now;
+      } else {
+        console.log(`Cache hit for ${src} (Fetched ${Math.round((now - cached.lastFetched) / 1000 / 60)}m ago)`);
+      }
+
+      const { data, channelNames } = cached;
+
+      // Dynamically match the requested channelId with XMLTV channels
+      const matchedXmlId = findBestXMLChannelId(channelId, channelNames);
+      
+      if (!matchedXmlId) {
+        console.log(`No matching channel found in XMLTV for: ${channelId} in source ${src}`);
+        // Try the next source if channel not found
+        continue;
+      }
+
+      console.log(`Matched request '${channelId}' to XMLTV Channel: '${matchedXmlId}' using source ${src}`);
+      const channelEPG = data[matchedXmlId] || [];
+      return NextResponse.json(channelEPG);
+    } catch (error) {
+      console.error(`Error loading EPG from source ${src}:`, error.message);
+      lastError = error;
     }
-
-    const { data, channelNames } = cached;
-
-    // Dynamically match the requested channelId with XMLTV channels
-    const matchedXmlId = findBestXMLChannelId(channelId, channelNames);
-    
-    if (!matchedXmlId) {
-      console.log(`No matching channel found in XMLTV for: ${channelId}`);
-      return NextResponse.json([]);
-    }
-
-    console.log(`Matched request '${channelId}' to XMLTV Channel: '${matchedXmlId}'`);
-    const channelEPG = data[matchedXmlId] || [];
-    return NextResponse.json(channelEPG);
-  } catch (error) {
-    console.error("API EPG Error:", error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
   }
+
+  // If both sources failed or did not find the channel
+  return NextResponse.json({ 
+    error: `Failed to download or parse XML EPG from all sources. Last error: ${lastError ? lastError.message : "unknown"}` 
+  }, { status: 500 });
 }
