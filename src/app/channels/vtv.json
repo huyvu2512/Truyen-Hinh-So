@@ -53,6 +53,7 @@
     "logo": "/logos/VTV/vtv7.png",
     "altLogo": "/logos/VTV/vtv7.png",
     "url": "https://api-truyenhinh.vercel.app/vtv7",
+    "drm": "https://vpsttt.vietanhtv.top/tv/cleankey.php?id=fptplay&token=ad07dab8b7a2f7b54ea36f2796d7a9ba",
     "group": "VTV"
   },
   {
@@ -69,6 +70,7 @@
     "logo": "/logos/VTV/vtv9.png",
     "altLogo": "/logos/VTV/vtv9.png",
     "url": "https://api-truyenhinh.vercel.app/vtv9",
+    "drm": "https://vpsttt.vietanhtv.top/tv/cleankey.php?id=fptplay&token=ad07dab8b7a2f7b54ea36f2796d7a9ba",
     "group": "VTV"
   },
   {

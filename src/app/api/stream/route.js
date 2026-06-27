@@ -29,9 +29,34 @@ export async function GET(request) {
   }
 
   try {
-    // Dynamically derive Origin/Referer from the target URL
-    // This ensures the proxy works with ANY streaming source, not just FPT Play
-    const targetOrigin = new URL(targetUrl).origin;
+    // --- Step 1: Resolve any redirects (e.g. api-truyenhinh.vercel.app → fptplay CDN) ---
+    // We must NOT auto-follow redirects because cross-origin redirects drop custom headers
+    // (Origin, Referer, User-Agent) per the Fetch spec, causing 403 at the CDN.
+    let finalUrl = targetUrl;
+    const MAX_REDIRECTS = 5;
+    
+    for (let i = 0; i < MAX_REDIRECTS; i++) {
+      const probeRes = await fetch(finalUrl, {
+        method: "GET",
+        redirect: "manual",
+        headers: {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+          "Accept": "*/*",
+        },
+      });
+
+      if ([301, 302, 303, 307, 308].includes(probeRes.status)) {
+        const location = probeRes.headers.get("location");
+        if (!location) break;
+        // Resolve relative redirects
+        finalUrl = location.startsWith("http") ? location : new URL(location, finalUrl).href;
+        continue;
+      }
+      break; // Not a redirect, we're done resolving
+    }
+
+    // --- Step 2: Fetch the resolved URL with correct Origin/Referer for the actual CDN ---
+    const targetOrigin = new URL(finalUrl).origin;
     const headers = {
       "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "Accept": "*/*",
@@ -39,7 +64,7 @@ export async function GET(request) {
       "Referer": `${targetOrigin}/`,
     };
 
-    const response = await fetch(targetUrl, {
+    const response = await fetch(finalUrl, {
       headers,
       redirect: "follow",
     });

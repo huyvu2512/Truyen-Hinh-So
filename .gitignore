@@ -43,3 +43,5 @@ next-env.d.ts
 # Private EPG / Channel configuration and local logos
 IPTV/
 
+# Secret codes
+src/app/code.js

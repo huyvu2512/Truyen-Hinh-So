@@ -162,6 +162,18 @@ body {
   border: 1px solid var(--border-color);
 }
 
+.video-container:fullscreen {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.video-container:-webkit-full-screen {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
 .video-element {
   width: 100%;
   height: 100%;
@@ -393,19 +405,21 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 60%, transparent 100%);
-  padding: 24px 0 16px 0; /* Changed padding to 0 on left/right for edge-to-edge track */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 60%, transparent 100%);
+  padding: 24px 0 16px 0;
   display: flex;
   flex-direction: column;
   gap: 16px;
   opacity: 0;
+  transform: translateY(8px);
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 20;
 }
 
 .custom-controls-overlay.visible {
   opacity: 1;
+  transform: translateY(0);
   pointer-events: auto;
 }
 

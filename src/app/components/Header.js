@@ -67,7 +67,7 @@ export default function Header() {
 
       {/* Header Actions */}
       <div className="flex items-center gap-4">
-        <button className="gradient-btn text-xs tracking-wider font-bold">MUA GÓI</button>
+
         
         {/* Search bar mini */}
         <form onSubmit={handleSearchSubmit} className="relative hidden sm:block">

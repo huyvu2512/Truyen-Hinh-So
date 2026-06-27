@@ -1,10 +1,10 @@
 [
   {
-    "id": "viegiaitri",
+    "id": "onviegiaitri",
     "name": "ON Vie Giải Trí",
     "logo": "/logos/VTVcab/viegiaitri.png",
     "altLogo": "/logos/VTVcab/viegiaitri.png",
-    "url": "https://api-truyenhinh.vercel.app/viegiaitri",
+    "url": "https://api-truyenhinh.vercel.app/onviegiaitri",
     "group": "VTVcab"
   },
   {
@@ -88,11 +88,11 @@
     "group": "VTVcab"
   },
   {
-    "id": "viedramas",
+    "id": "onviedramas",
     "name": "ON Vie Dramas",
     "logo": "/logos/VTVcab/viedramas.png",
     "altLogo": "/logos/VTVcab/viedramas.png",
-    "url": "https://api-truyenhinh.vercel.app/viedramas",
+    "url": "https://api-truyenhinh.vercel.app/onviedramas",
     "group": "VTVcab"
   },
   {
