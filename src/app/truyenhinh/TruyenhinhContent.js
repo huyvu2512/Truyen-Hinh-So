@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { CHANNELS, getMockEPG } from "../channels";
 import Hls from "hls.js";
 import { useSearchParams, useRouter } from "next/navigation";
-import { ACCESS_CODE } from "../code";
+
 const loadShakaPlayer = () => {
   return new Promise((resolve) => {
     if (window.shaka) {
@@ -140,7 +140,7 @@ export default function TruyenhinhContent({ initialChannelId } = {}) {
       setErrorMsg("Vui lòng nhập đầy đủ 4 chữ số.");
       return;
     }
-    if (inputCode === ACCESS_CODE) {
+    if (inputCode === (process.env.NEXT_PUBLIC_ACCESS_CODE || "2512")) {
       localStorage.setItem("truyenhinh_code_unlocked", "true");
       setIsUnlocked(true);
       setErrorMsg("");
